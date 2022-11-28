@@ -1,0 +1,123 @@
+/* Font */
+@import url(../font/nunito-sans/nunito-sans.css);
+
+/* Variable */
+:root {
+  --ff-heading: "Nunito Sans", sans-serif;
+  --clr-brand: #100c26;
+  --clr-brand-light: #221d41;
+  --radius: 0.25rem;
+  --transition: 0.4s all ease;
+}
+
+/* Reset */
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+
+/* Utility */
+.fontHeading {
+  font-family: var(--ff-heading);
+}
+
+.font900 {
+  font-weight: 900;
+}
+
+/* Section */
+.sectionPadding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Btn */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Hero */
+body {
+  color: white;
+  background: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--clr-brand);
+  background-attachment: fixed;
+}
+
+/* Feature */
+.feature__card {
+  background-color: var(--clr-brand-light);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.feature__card img {
+  margin-top: auto;
+  height: 2rem;
+  width: auto;
+}
+
+/* Template */
+.template__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.template__media {
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.template__media img {
+  transition: var(--transition);
+}
+
+.template__card:hover .template__media img {
+  transform: scale(1.125);
+}
+
+.template__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.template__title {
+  color: white;
+}
+
+.template__content a {
+  text-decoration: none;
+  columns: white;
+}
+
+.template__id {
+  opacity: 0.5;
+  font-size: 60%;
+  background-color: black;
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 1;
+}
