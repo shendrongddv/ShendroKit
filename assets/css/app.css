@@ -6,7 +6,8 @@
   --ff-heading: "Nunito Sans", sans-serif;
   --clr-brand: #100c26;
   --clr-brand-light: #221d41;
-  --radius: 0.5rem;
+  --radius: 0.25rem;
+  --transition: 0.4s all ease;
 }
 
 /* Reset */
@@ -69,4 +70,43 @@ body {
   margin-top: auto;
   height: 2rem;
   width: auto;
+}
+
+/* Template */
+.template__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.template__media {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.template__media img {
+  transition: var(--transition);
+}
+
+.template__card:hover .template__media img {
+  transform: scale(1.125);
+}
+
+.template__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.template__id {
+  opacity: 0.5;
+  font-size: 60%;
+  background-color: black;
+  border-radius: 4px;
+  padding: 4px 8px;
+  line-height: 1;
 }
