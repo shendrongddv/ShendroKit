@@ -4,13 +4,33 @@
 /* Variable */
 :root {
   --ff-heading: "Nunito Sans", sans-serif;
-  --clr-brand: #100c26;
-  --clr-brand-light: #221d41;
+  --clr-brand: #02b7af;
+  --clr-brand-light: white;
+  --clr-body: #1f1e2b;
+  --clr-body-light: #394051;
   --radius: 0.25rem;
   --transition: 0.4s all ease;
+  --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  --shadow-l: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 /* Reset */
+body {
+  background-color: white;
+  color: var(--clr-body-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-body);
+}
+
 img,
 picture,
 svg {
@@ -32,6 +52,16 @@ svg {
   padding-bottom: 5rem;
 }
 
+.sectionSubtitle {
+  color: var(--clr-brand);
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 /* Btn */
 .btn {
   display: inline-flex;
@@ -39,4 +69,52 @@ svg {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1.5rem;
+}
+
+/* Hero */
+#hero {
+  background: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.iconText__list li {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iconText__list li i {
+  color: var(--clr-brand);
+}
+
+/* Problem */
+.iconTextCard__card {
+  padding: 1rem;
+  border-radius: var(--radius);
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.iconTextCard__card i {
+  color: var(--clr-brand);
+}
+
+.iconTextCard__card:hover {
+  background-color: var(--clr-brand);
+  color: white;
+  box-shadow: var(--shadow-l);
+}
+
+.iconTextCard__card:hover i {
+  color: white;
+}
+
+.iconTextCard__card span {
+  font-weight: 600;
 }
