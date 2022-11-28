@@ -1,0 +1,49 @@
+/* Font */
+@import url(../font/nunito-sans/nunito-sans.css);
+
+/* Variable */
+:root {
+  --ff-heading: "Nunito Sans", sans-serif;
+  --clr-brand: #100c26;
+}
+
+/* Reset */
+img,
+picture,
+svg {
+  max-width: 100%;
+}
+
+/* Utility */
+.fontHeading {
+  font-family: var(--ff-heading);
+}
+
+.font900 {
+  font-weight: 900;
+}
+
+/* Section */
+.sectionPadding {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Btn */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+/* Hero */
+body {
+  background: url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--clr-brand);
+  background-attachment: fixed;
+}
