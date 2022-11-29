@@ -118,3 +118,11 @@ svg {
 .iconTextCard__card span {
   font-weight: 600;
 }
+
+/* Author */
+#author {
+  background: url(../img/author-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
